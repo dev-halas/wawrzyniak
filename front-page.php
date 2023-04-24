@@ -1,5 +1,5 @@
 <?php get_header(); ?>
 
-GŁÓWNA
+HOME
 
 <?php get_footer(); ?>
