@@ -1,2 +1,2 @@
-//require('./js/nazwapliku');
+require('./js/header');
 import './scss/styles.scss';

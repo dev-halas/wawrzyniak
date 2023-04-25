@@ -8,18 +8,19 @@ html {
 }
 
 body {
-    /*
-    font-family: 'Poiret One', cursive;
-    background-color: #fff;
-    */
+    background-color: $green;
+    font-size: clamp(16px, 1.05vw, 22px);
+    color: $light;
+    font-family: 'Poppins', sans-serif;
 }
+
+#wpadminbar {
+    display: none;
+}
+
 h1, h2, h3, h4 {
-    /*
-    font-family: 'Open Sans', sans-serif;
-    */
+    font-family: 'Playfair Display', serif;
 }
-
-
 
 a {
     text-decoration: none;
@@ -53,9 +54,9 @@ $breakpoints: (
   'mobile':  480px,
   'small': 768px,
   'tablet': 1024px,
-  'laptop':  1200px,
-  'large': 1600px,
-  'fullhd': 1920px
+  'laptop':  1366px,
+  '1440': 1440px,
+  'large': 1920px
 ) !default;
 
 @mixin responsive($breakpoint) {
