@@ -1,7 +1,7 @@
 .offer-container {
     position: relative;
     background-color: $light;
-    padding: 300px 0;
+    padding: min(15vw, 1920px) 0;
 
     @include responsive('tablet') {
         padding: 150px 0;
