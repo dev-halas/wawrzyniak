@@ -15,6 +15,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 		<link rel="stylesheet" href="<?php echo THEME_URL ?>public/main.css">
 	</head>
 	
@@ -28,9 +29,11 @@
 				<nav class="navLinks">
 					<?php wp_nav_menu(['theme_location' => 'main_nav']); ?>
 				</nav>
-				<div class="hamburger">
-					<button>Burger</button>
-				</div>
+				<button class="hamburger" type="button">
+						<span class="hamburger__line1"></span>
+						<span class="hamburger__line2"></span>
+						<span class="hamburger__line3"></span>
+				</button>
 			</div>
 
 		</header>
