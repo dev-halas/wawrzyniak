@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
-HOME
+    <main>
+        <?php 
+            get_template_part('/components/home/hero'); 
+        ?>
+    </main>
 
 <?php get_footer(); ?>
