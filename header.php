@@ -21,7 +21,7 @@
 	
 
 	<body <?php body_class()?>>
-		<header class="header --open">
+		<header class="header">
 			<div class="headerInner">
 				<a class="headerLogo" href="<?php echo esc_url(home_url('/')) ?>">
 					<img src="<?php echo THEME_URL; ?>_dev/img/logo_small.png" alt="logo">
