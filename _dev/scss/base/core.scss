@@ -90,6 +90,11 @@ $containerMobile: 90vw;
     }
 }
 
+.container-big {
+    @extend .container;
+    width: min(95vw, 1920px);
+}
+
 @media screen and (max-width: 782px) {
     html {
         margin-top: 0px !important;

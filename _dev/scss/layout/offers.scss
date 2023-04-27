@@ -1,0 +1,120 @@
+.offer-container {
+    position: relative;
+    background-color: $light;
+    padding: min(15vw, 1920px) 0;
+
+    @include responsive('tablet') {
+        padding: 150px 0;
+    }
+
+    svg {
+        &.wave {
+            position: absolute;
+            fill: $green;
+            left: 0;
+            right: 0;
+        }
+
+        &.wave-up {
+            top: -2px;
+        }
+
+        &.wave-down {
+            bottom: -2px;
+        }
+    }
+}
+
+.offer-header {
+    color: $green;
+    text-align: center;
+}
+
+.offer-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 0;
+
+    @include responsive('tablet') {
+        padding-bottom: 0;
+    }
+
+    @include responsive('tablet') {
+        gap: 60px 0;
+    }
+
+    .offer-item-image {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex: 1;
+
+        @include responsive('tablet') {
+            flex: unset;
+            width: 300px;
+        }
+
+        @include responsive('small') {
+            width: 100%;
+        }
+
+        .title {
+            color: $green;
+            padding-top: 60px;
+            text-align: center;
+        }
+    }
+}
+
+.offer-fitness-container {
+    padding: 90px 0;
+    display: flex;
+    align-items: center;
+
+    & > * {
+        flex: 1;
+    }
+
+    @include responsive('tablet') {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.offer-fitness-image {
+    flex: 1;
+    display: flex;
+    margin-right: min(5vw, 90px);
+
+    img {
+        flex: 1;
+    }
+
+    @include responsive('tablet') {
+        order: 2;
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 30px;
+    }
+}
+
+.offer-fitness-header {
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    color: $light;
+    flex: 0;
+
+    @include responsive('tablet') {
+        order: 1;
+        transform: rotate(0);
+        padding-bottom: 30px;
+    }
+}
+
+.offer-fitness-text {
+    @include responsive('tablet') {
+        order: 3;
+    }
+}
