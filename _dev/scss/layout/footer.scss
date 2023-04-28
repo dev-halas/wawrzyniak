@@ -1,0 +1,106 @@
+.footer {
+    position: relative;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.footerInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    width: min(80%, 1920px);
+    margin: auto;
+    @include responsive('tablet'){
+        width: 90%;
+
+        .rotateText {
+            font-size: 24px;
+        }
+    }
+}
+
+.footerLogo {
+    img {
+        max-width: 250px;
+    }
+}
+
+.footerWrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+
+    @include responsive('tablet'){
+        flex-direction: column;
+    }
+}
+
+.footerContacts {
+    flex: 1;
+}
+
+.footerCol {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+
+    a {
+        font-family: 'Playfair Display', serif;
+        display: flex;
+        font-size: clamp(18px, 1.2vw, 28px);
+        gap: 15px;
+    }
+
+    @include responsive('tablet'){
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @include responsive('tablet'){
+        gap: 10px;
+    }
+}
+
+.footerLink {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    svg {
+        width: MAX(24px, 2vw);
+        height: auto;
+    }
+}
+
+.footerCol--small {
+    width: 300px;
+    strong {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.footerCopy {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include responsive('tablet'){
+        flex-direction: column;
+    }
+}
+
+.footerOutline--text {
+    position: absolute;
+    left: 20%;
+    bottom: clamp(-10px, -3vh, 30px);
+    @include responsive('tablet'){
+        right: 0;
+    }
+}

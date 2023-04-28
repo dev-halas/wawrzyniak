@@ -63,6 +63,9 @@
             color: $green;
             padding-top: 60px;
             text-align: center;
+            @include responsive('small') {
+                padding-top: 20px;
+            }
         }
     }
 }
@@ -100,16 +103,17 @@
 }
 
 .offer-fitness-header {
-    transform: rotate(-90deg);
     display: flex;
     align-items: center;
     color: $light;
     flex: 0;
+    margin-right: 50px;
 
     @include responsive('tablet') {
         order: 1;
         transform: rotate(0);
         padding-bottom: 30px;
+        margin-right: 0;
     }
 }
 
