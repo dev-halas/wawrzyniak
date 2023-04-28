@@ -1,0 +1,60 @@
+.gallery-container {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    position: relative;
+}
+
+.gallery-header {
+    transform: rotate(-180deg);
+    writing-mode: vertical-rl;
+    position: absolute;
+    font-size: 280px;
+    left: -5%;
+    top: 10%;
+
+    @include responsive('tablet') {
+        transform: rotate(0);
+        padding-bottom: 30px;
+    }
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .gallery-image {
+        flex: 33%;
+        position: relative;
+
+        &.one {
+            top: -100px;
+            z-index: 1;
+        }
+
+        &.two {
+            left: -100px;
+        }
+
+        &.three {
+            left: -150px;
+            top: -50px;
+            z-index: -1;
+        }
+
+        &.four {
+            left: 150px;
+            top: -300px;
+        }
+
+        &.five {
+            top: -250px;
+            left: 50px;
+        }
+
+        img {
+            flex: 1;
+        }
+    }
+}
