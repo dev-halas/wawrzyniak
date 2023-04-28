@@ -34,7 +34,7 @@
         <div class="offer-fitness-image">
             <img src="<?php echo THEME_URL; ?>_dev/img/woman-exercise.jpg" alt="młoda kobieta ćwiczy na bieżni">
         </div>
-        <h2 class="offer-fitness-header">Fitness</h2>
+        <h2 class="offer-fitness-header headingBig--revert rotateText">Fitness</h2>
         <div class="offer-fitness-text">
             <p>Hotel Wawrzyniak zaprasza wszystkich gości hotelowych do aktywnego wypoczynku.</p>
             <br/>

@@ -1,6 +1,6 @@
 <section id="about-container">
     <div class="container about-container">
-        <h2 class="about-header">Dzień dobry</h2>
+        <h2 class="about-header headingBig--revert rotateText">Dzień dobry</h2>
         <div class="about-text">
             <p>W południowej Wielkopolsce, w malowniczej okolicy znajduje się Hotel, w którym warto się zatrzymać i odpocząć. Proponujemy Państwu miejsce, o komfortowych warunkach i przyjaznej atmosferze.</p>
             </br>

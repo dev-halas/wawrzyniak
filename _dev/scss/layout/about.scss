@@ -1,15 +1,19 @@
 .about-container {
-    padding: 100px 0;
+    padding: 5% 0;
     display: flex;
+    align-items: center;
+    gap: 50px;
 
     @include responsive('tablet') {
         flex-direction: column;
-        width: min(95vw, 1920px);
+        width: min(90vw, 1920px);
+        gap: 0px;
+        align-items: baseline;
+        padding: 10% 0;
     }
 }
 
 .about-header {
-    transform: rotate(-90deg);
     display: flex;
     align-items: center;
     white-space: nowrap;

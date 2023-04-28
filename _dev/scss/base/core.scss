@@ -1,6 +1,7 @@
 $green: #0F4A30;
 $darkGreen: #133627;
 $light: #F5F2D9;
+$lightGreen: #CDEDDF;
 
 html {
     scroll-behavior: smooth;
@@ -91,10 +92,49 @@ $containerMobile: 90vw;
 .container-big {
     @extend .container;
     width: min(94vw, 1920px);
+
+    @include responsive('small') {
+        width: min(90vw, 768px);
+    }
 }
 
 @media screen and (max-width: 782px) {
     html {
         margin-top: 0px !important;
     }
+}
+
+.headingBig--revert {
+    font-size: clamp(24px, 3.2vw, 70px);
+}
+
+.rotateText {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+
+    @include responsive('tablet') {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        writing-mode: unset;
+        -webkit-writing-mode: unset;
+        -ms-writing-mode: unset;
+    }
+}
+
+.textBig--outline {
+    font-family: 'Playfair Display', serif;
+    color: transparent;
+    -webkit-text-stroke: 1px $lightGreen;
+    opacity: .3;
+    font-size: clamp(80px, 12.5vw, 250px);
+    line-height: 1;
 }
