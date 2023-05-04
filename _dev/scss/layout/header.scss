@@ -39,7 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 38px 0;
     @include responsive('laptop') {
         width: 90%;
         padding: 15px 0;
@@ -75,7 +75,7 @@
 .header--reservation {
     background-color: $light;
     color: $green;
-    padding: clamp(8px, 1vw, 20px) clamp(20px, 2vw, 44px);
+    padding: clamp(8px, .6vw, 20px) clamp(20px, 2vw, 44px);
     border: 2px solid $light;
     text-transform: uppercase;
 }
@@ -210,7 +210,7 @@
             -moz-transform: scale(1);
             -ms-transform: scale(1);
             -o-transform: scale(1);
-}                         
+        }                                
     }
 }
 
