@@ -75,6 +75,16 @@
                     <img src="<?php echo THEME_URL; ?>_dev/img/events-medium-button-hover.png" alt="">
                 </div>
             </button>
+            <div class="events-element-container">
+                <h3>Imprezy okolicznościowe</h3>
+                <div class="events-element-text">
+                    <p>W życiu każdego z nas jest wiele chwil, które chcielibyśmy spędzić w otoczeniu najbliższych osób. 
+                        Zachęcamy Państwa do skorzystania z naszej oferty przyjęć okolicznościowych, ponieważ według nas każda, nawet najmniejsza uroczystość, jest szczególna.</p>
+
+                    <p>Profesjonalnie (i z pomysłem) pomożemy Państwu uczcić wyjątkowe okazje.</p>
+                </div>
+                <button class="close-btn"></button>
+            </div>
         </div>
     </div>
 </section>

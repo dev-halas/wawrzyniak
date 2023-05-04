@@ -22,6 +22,25 @@
         &.wave-down {
             bottom: -2px;
         }
+
+        &.circle-text {
+            position: absolute;
+            right: 7vw;
+            top: 1vw;
+            background-color: $darkGreen;
+            border-radius: 50%;
+            width: 270px;
+            height: 270px;
+
+            text {
+                fill: $light;
+                font-family: 'Playfair Display, serif';
+            }
+
+            @include responsive('tablet') {
+                display: none;
+            }
+        }
     }
 }
 

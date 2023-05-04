@@ -1,6 +1,7 @@
 <section id="gallery">
     <div class="container-big gallery-container">
-        <h2 class="gallery-header">Galeria</h2>
+        <h2 class="gallery-header-stroke">Galeria</h2>
+        <h2 class="gallery-header-revert">Galeria</h2>
         <div class="container gallery-images">
             <div class="gallery-image one">
                 <img src="<?php echo THEME_URL; ?>_dev/img/white-comfortable-pillow.jpg" alt="pokój jednoosobowy">

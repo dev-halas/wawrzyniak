@@ -11,7 +11,7 @@
     .decoration {
         @extend .center-absolute;
         fill: $darkGreen;
-        z-index: -1
+        z-index: -4;
     }
 }
 
@@ -39,7 +39,10 @@
         position: absolute;
         background-color: transparent;
         border: none;
-        cursor: pointer;
+
+        img {
+            pointer-events: none;
+        }
 
         .name {
             @extend .center-absolute;
@@ -62,6 +65,7 @@
             width: 90%;
             opacity: 0;
             transition: opacity ease-in-out .3s;
+            pointer-events: none;
         }
 
         &:hover {
@@ -95,6 +99,53 @@
 
         &.five {
             top: 80%;
+        }
+    }
+}
+
+.events-element-container {
+    border-radius: 50%;
+    width: min(45vw, 1400px);
+    height: min(45vw, 1400px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+    @extend .center-absolute;
+    background-color: $light;
+    color: $green;
+    opacity: 0;
+    transition: opacity ease-in-out .3s;
+
+    &.active {
+        opacity: 1;
+        transition: opacity ease-in-out .3s;
+    }
+
+    h3, .events-element-text {
+        margin-bottom: 60px;
+    }
+
+    .close-btn {
+        height: 25px;
+        width: 25px;
+        background-color: $green;
+        border-radius: 50%;
+        position: relative;
+        border: none;
+
+        &::after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            content: "\2716";
+            font-size: 15px; 
+            color: $light;
+            line-height: 25px;
+            text-align: center;
         }
     }
 }
