@@ -24,6 +24,18 @@
     h2 {
         margin-bottom: 50px;
     }
+
+    @include responsive('tablet') {
+        &.active {
+            width: 100%;
+
+            .events-elements {
+                transform: scale(110%);
+                transform-origin: top;
+                @include transition(transform);
+            }
+        }
+    }
 }
 
 .events-elements {
@@ -34,14 +46,47 @@
     display: flex;
     justify-content: center;
     position: relative;
+    transform: scale(1);
+    transform-origin: top;
+    @include transition(transform);
+
+    @include responsive('laptop') {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    @include responsive('tablet') {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    @include responsive('small') {
+        flex-direction: column;
+        width: 750px;
+        height: 750px;
+    }
 
     .events-button {
         position: absolute;
         background-color: transparent;
         border: none;
 
+        @include responsive('small') {
+            position: static;
+        }
+
         img {
             pointer-events: none;
+
+            @include responsive('tablet') {
+                width: 75%
+            }
+
+            @include responsive('small') {
+                width: 75vw;
+                height: calc(700px / 9);
+                margin: auto;
+            }
         }
 
         .name {
@@ -49,22 +94,68 @@
             color: $light;
             z-index: 1;
             cursor: pointer;
-            transition: color ease-in-out .3s;
+            @include transition(color);
         }
 
         &.left-20 {
             left: -25%;
+            @include transition(transform);
+            transform: translateX(0);
+
+            @include responsive('tablet') {
+                left: -10vw;
+
+                &.move-left {
+                    @include transition(transform);
+                    transform: translateX(-100%);
+                }
+
+                img {
+                    margin-right: auto;
+                }
+
+                .name {
+                    left: 35%;
+
+                    @include responsive('small') {
+                        left: unset;
+                    }
+                }
+            }
         }
 
         &.right-20 {
             right: -25%;
+            @include transition(transform);
+            transform: translateX(0);
+
+            @include responsive('tablet') {
+                right: -10vw;
+
+                &.move-right {
+                    @include transition(transform);
+                    transform: translateX(100%);
+                }
+
+                img {
+                    margin-left: auto;
+                }
+
+                .name {
+                    left: 65%;
+
+                    @include responsive('small') {
+                        left: unset;
+                    }
+                }
+            }
         }
 
         .child {
             @extend .center-absolute;
             width: 90%;
             opacity: 0;
-            transition: opacity ease-in-out .3s;
+            @include transition(opacity);
             pointer-events: none;
         }
 
@@ -72,12 +163,12 @@
             
             & > .name {
                 color: $green;
-                transition: color ease-in-out .3s;
+                @include transition(color);
             }
 
             .child {
                 opacity: 1;
-                transition: opacity ease-in-out .3s;
+                @include transition(opacity);
             }
         }
 
@@ -116,15 +207,39 @@
     background-color: $light;
     color: $green;
     opacity: 0;
-    transition: opacity ease-in-out .3s;
+    visibility: hidden;
+    transition: opacity .3s ease-in-out, visibility 0s ease-in-out .3s;
+
+    @include responsive('laptop') {
+        width: 55vw;
+        height: 55vw;
+    }
+
+    @include responsive('tablet') {
+        width: 75vw;
+        height: 75vw;
+        padding: 60px;
+    }
+
+    @include responsive('small') {
+        width: 700px;
+        height: 700px;
+        padding-inline: 45vw;
+        padding-bottom: 0;
+    }
 
     &.active {
         opacity: 1;
-        transition: opacity ease-in-out .3s;
+        visibility: visible;
+        transition: opacity .3s ease-in-out, visibility 0s ease-in-out 0s;
     }
 
     h3, .events-element-text {
         margin-bottom: 60px;
+
+        @include responsive('small') {
+            width: 80vw;
+        }
     }
 
     .close-btn {
