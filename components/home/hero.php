@@ -1,15 +1,17 @@
 <section class="hero">
     <div class="heroInner">
         <div class="heroContent">
-            <span class="heroSmall--text">
+            <span class="heroSmall--text" data-aos="fade-up">
                 poznaj nas
             </span>
-            <h1>Poczuj się komfortowo<br/>
+            <h1 data-aos="fade-up" data-aos-delay="300">Poczuj się komfortowo<br/>
                 i złap dystans w naszym hotelu
             </h1>
-            <a href="#" class="button--skew">
-                <span>zobacz wnętrza</span>
-            </a>
+            <div data-aos="fade-up" data-aos-delay="600">
+                <a href="#" class="button--skew" >
+                    <span>zobacz wnętrza</span>
+                </a>
+            </div>
         </div>
         <div class="heroBottom--bar">
             <div class="hero--nav">
