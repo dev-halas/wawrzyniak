@@ -1,0 +1,23 @@
+.menu-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.menu-images {
+    display: flex;
+    gap: min(6vw,120px);
+
+    @include responsive('tablet') {
+        flex-direction: column;
+    }
+}
+
+.menu-image {
+    flex: 50%;
+    display: flex;
+
+    img {
+        flex: 1;
+    }
+}

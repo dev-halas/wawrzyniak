@@ -37,5 +37,9 @@ const hideEventDescription = e => {
 eventBtns.forEach(btn => {
     btn.addEventListener('click', showEventDescription);
 });
-closeBtn.addEventListener('click', hideEventDescription);
+
+if (closeBtn) {
+    closeBtn.addEventListener('click', hideEventDescription);
+}
+
 document.addEventListener('keydown', hideEventDescription);
