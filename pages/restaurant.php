@@ -58,6 +58,8 @@
                 </div>
             </div>
         </section>
+
+        <?php get_template_part('/components/restaurant/worktime');?>
     </main>
 
 <?php get_footer(); ?>

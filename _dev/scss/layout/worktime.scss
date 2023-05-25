@@ -1,0 +1,139 @@
+$w-circle: 95px;
+$w-circle-small: 75px;
+$top-timeline: 45px;
+$top-timeline-small: 35px;
+
+@function count-top-timeline($multiplicand) {
+    $multiplier: 170px;
+    @return calc($top-timeline-small + $multiplicand * $multiplier);
+}
+
+@function count-top-timeline-small($multiplicand) {
+    $multiplier: 190px;
+    @return calc($top-timeline + $multiplicand * $multiplier);
+}
+
+.worktime-header {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.worktime-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+}
+
+.worktime-clock {
+    height: $w-circle;
+    width: $w-circle;
+}
+
+.worktime-timeline {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.worktime-days-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    @include responsive('tablet') {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+
+    @include responsive('small') {
+        width: 100%;
+    }
+}
+
+.worktime-line {
+    position: absolute;
+    top: $top-timeline-small;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: $light;
+    z-index: -1;
+
+    @include responsive('tablet') {
+        &.worktime-line-2 {
+            top: count-top-timeline(1);
+        }
+
+        &.worktime-line-3 {
+            top: count-top-timeline(2);
+        }
+
+        &.worktime-line-4 {
+            top: count-top-timeline(3);
+        }
+    }
+
+    @include responsive('small') {
+        top: $top-timeline;
+
+        &.worktime-line-2 {
+            top: count-top-timeline-small(1);
+        }
+
+        &.worktime-line-3 {
+            top: count-top-timeline-small(2);
+        }
+
+        &.worktime-line-4 {
+            top: count-top-timeline-small(3);
+        }
+
+        &.worktime-line-5 {
+            top: count-top-timeline-small(4);
+        }
+
+        &.worktime-line-6 {
+            top: count-top-timeline-small(5);
+        }
+
+        &.worktime-line-7 {
+            top: count-top-timeline-small(6);
+        }
+    }
+}
+
+.worktime-day {
+    width: $w-circle-small;
+    height: $w-circle-small;
+    border-radius: 50%;
+    background-color: $light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $green;
+    font-weight: 600;
+
+    @include responsive('small') {
+        width: $w-circle;
+        height: $w-circle;
+    }
+}
+
+abbr {
+    text-decoration: none;
+}
+
+time {
+    &.start {
+        margin-right: 4px;
+    }
+    &.end {
+        margin-left: 4px;
+    }
+}
