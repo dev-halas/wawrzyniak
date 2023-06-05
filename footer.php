@@ -1,4 +1,4 @@
-<footer class="footer" data-aos="zoom-in">
+<footer class="footer" data-aos="zoom-in" id="kontakt">
 	<?php wp_footer(); ?>
 	<div class="footerInner">
 		<div class="footerLogo">

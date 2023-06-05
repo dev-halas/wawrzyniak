@@ -1,4 +1,4 @@
-<section id="about-container">
+<section id="about-container" id="hotel">
     <div class="container about-container">
         <h2 class="about-header headingBig--revert rotateText">Dzień dobry</h2>
         <div class="about-text" data-aos="fade-up">
