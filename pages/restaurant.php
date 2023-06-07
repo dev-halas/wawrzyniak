@@ -15,7 +15,7 @@
                 </div>
             </div>
         </section>
-        <section id="gallery">
+        <section id="galeria">
             <div class="container-big gallery-container">
                 <h2 class="gallery-header-stroke">Galeria</h2>
                 <h2 class="gallery-header-revert">Galeria</h2>
