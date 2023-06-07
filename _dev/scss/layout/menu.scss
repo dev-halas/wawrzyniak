@@ -13,6 +13,11 @@
     }
 }
 
+.lg-outer .lg-object {
+    height: 80% !important;
+    object-fit: contain;
+}
+
 .menu-image {
     flex: 50%;
     display: flex;

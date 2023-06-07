@@ -26,6 +26,7 @@
         "webpack-dev-server": "^3.11.0"
     },
     "dependencies": {
-        "aos": "^3.0.0-beta.6"
+        "aos": "^3.0.0-beta.6",
+        "lightgallery": "^2.7.1"
     }
 }

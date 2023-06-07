@@ -76,7 +76,87 @@
                 </div>
             </button>
             <div class="events-element-container">
+                <h3>Przyjęcia</h3>
+                <div class="events-element-text">
+                    <p>W życiu każdego z nas jest wiele chwil, które chcielibyśmy spędzić w otoczeniu najbliższych osób. 
+                        Zachęcamy Państwa do skorzystania z naszej oferty przyjęć okolicznościowych, ponieważ według nas każda, nawet najmniejsza uroczystość, jest szczególna.</p>
+
+                    <p>Profesjonalnie (i z pomysłem) pomożemy Państwu uczcić wyjątkowe okazje.</p>
+                </div>
+                <button class="close-btn"></button>
+            </div>
+            <div class="events-element-container">
+                <h3>Wesela</h3>
+                <div class="events-element-text">
+                    <p>W życiu każdego z nas jest wiele chwil, które chcielibyśmy spędzić w otoczeniu najbliższych osób. 
+                        Zachęcamy Państwa do skorzystania z naszej oferty przyjęć okolicznościowych, ponieważ według nas każda, nawet najmniejsza uroczystość, jest szczególna.</p>
+
+                    <p>Profesjonalnie (i z pomysłem) pomożemy Państwu uczcić wyjątkowe okazje.</p>
+                </div>
+                <button class="close-btn"></button>
+            </div>
+            <div class="events-element-container">
+                <h3>Komunie</h3>
+                <div class="events-element-text">
+                    <p>W życiu każdego z nas jest wiele chwil, które chcielibyśmy spędzić w otoczeniu najbliższych osób. 
+                        Zachęcamy Państwa do skorzystania z naszej oferty przyjęć okolicznościowych, ponieważ według nas każda, nawet najmniejsza uroczystość, jest szczególna.</p>
+
+                    <p>Profesjonalnie (i z pomysłem) pomożemy Państwu uczcić wyjątkowe okazje.</p>
+                </div>
+                <button class="close-btn"></button>
+            </div>
+            <div class="events-element-container">
+                <h3>Imprezy plenerowe</h3>
+                <div class="events-element-text">
+                    <p>W życiu każdego z nas jest wiele chwil, które chcielibyśmy spędzić w otoczeniu najbliższych osób. 
+                        Zachęcamy Państwa do skorzystania z naszej oferty przyjęć okolicznościowych, ponieważ według nas każda, nawet najmniejsza uroczystość, jest szczególna.</p>
+
+                    <p>Profesjonalnie (i z pomysłem) pomożemy Państwu uczcić wyjątkowe okazje.</p>
+                </div>
+                <button class="close-btn"></button>
+            </div>
+            <div class="events-element-container">
                 <h3>Imprezy okolicznościowe</h3>
+                <div class="events-element-text">
+                    <p>W życiu każdego z nas jest wiele chwil, które chcielibyśmy spędzić w otoczeniu najbliższych osób. 
+                        Zachęcamy Państwa do skorzystania z naszej oferty przyjęć okolicznościowych, ponieważ według nas każda, nawet najmniejsza uroczystość, jest szczególna.</p>
+
+                    <p>Profesjonalnie (i z pomysłem) pomożemy Państwu uczcić wyjątkowe okazje.</p>
+                </div>
+                <button class="close-btn"></button>
+            </div>
+            <div class="events-element-container">
+                <h3>Biznes</h3>
+                <div class="events-element-text">
+                    <p>W życiu każdego z nas jest wiele chwil, które chcielibyśmy spędzić w otoczeniu najbliższych osób. 
+                        Zachęcamy Państwa do skorzystania z naszej oferty przyjęć okolicznościowych, ponieważ według nas każda, nawet najmniejsza uroczystość, jest szczególna.</p>
+
+                    <p>Profesjonalnie (i z pomysłem) pomożemy Państwu uczcić wyjątkowe okazje.</p>
+                </div>
+                <button class="close-btn"></button>
+            </div>
+            <div class="events-element-container">
+                <h3>Szkolenia</h3>
+                <div class="events-element-text">
+                    <p>W życiu każdego z nas jest wiele chwil, które chcielibyśmy spędzić w otoczeniu najbliższych osób. 
+                        Zachęcamy Państwa do skorzystania z naszej oferty przyjęć okolicznościowych, ponieważ według nas każda, nawet najmniejsza uroczystość, jest szczególna.</p>
+
+                    <p>Profesjonalnie (i z pomysłem) pomożemy Państwu uczcić wyjątkowe okazje.</p>
+                </div>
+                <button class="close-btn"></button>
+            </div>
+            <div class="events-element-container">
+                <h3>Konferencje</h3>
+                <div class="events-element-text">
+                    <p>W życiu każdego z nas jest wiele chwil, które chcielibyśmy spędzić w otoczeniu najbliższych osób. 
+                        Zachęcamy Państwa do skorzystania z naszej oferty przyjęć okolicznościowych, ponieważ według nas każda, nawet najmniejsza uroczystość, jest szczególna.</p>
+
+                    <p>Profesjonalnie (i z pomysłem) pomożemy Państwu uczcić wyjątkowe okazje.</p>
+                </div>
+                <button class="close-btn"></button>
+            </div>
+            <div class="events-element-container">
+                <h3>Imprezy firmowe</h3>
                 <div class="events-element-text">
                     <p>W życiu każdego z nas jest wiele chwil, które chcielibyśmy spędzić w otoczeniu najbliższych osób. 
                         Zachęcamy Państwa do skorzystania z naszej oferty przyjęć okolicznościowych, ponieważ według nas każda, nawet najmniejsza uroczystość, jest szczególna.</p>

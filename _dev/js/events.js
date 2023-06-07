@@ -1,9 +1,9 @@
 const eventBtns = document.querySelectorAll('button.events-button');
-const eventDescription = document.querySelector('.events-element-container');
+const eventDescriptions = document.querySelectorAll('.events-element-container');
 const eventContainer = document.querySelector('.events-container');
 const leftBtns = document.querySelectorAll('.left-20');
 const rightBtns = document.querySelectorAll('.right-20');
-const closeBtn = document.querySelector('.close-btn');
+const closeBtn = document.querySelectorAll('.close-btn');
 
 const addClassToBtns = (btns, className) => {
     btns.forEach(btn => {
@@ -18,7 +18,6 @@ const removeClassFromBtns = (btns, className) => {
 }
 
 const showEventDescription = e => {
-    eventDescription.classList.add('active');
     eventContainer.classList.add('active');    
     addClassToBtns(leftBtns, 'move-left');
     addClassToBtns(rightBtns, 'move-right');
@@ -28,18 +27,33 @@ const hideEventDescription = e => {
     if (e.type === 'keydown' && e.key !== 'Escape') {
         return;
     }
-    eventDescription.classList.remove('active');
     eventContainer.classList.remove('active');
     removeClassFromBtns(leftBtns, 'move-left');
     removeClassFromBtns(rightBtns, 'move-right');
 }
 
-eventBtns.forEach(btn => {
-    btn.addEventListener('click', showEventDescription);
+eventBtns.forEach((btn, index) => {
+    btn.addEventListener('click', e => {
+        showEventDescription(e);
+        eventDescriptions.forEach((description, i) => {
+            description.classList.remove('active');
+        })
+        eventDescriptions[index].classList.add('active');
+    });
 });
 
 if (closeBtn) {
-    closeBtn.addEventListener('click', hideEventDescription);
+    closeBtn.forEach((btn, index) => {
+        btn.addEventListener('click', e => {
+            hideEventDescription(e);
+            eventDescriptions[index].classList.remove('active');
+        });
+    })
 }
 
-document.addEventListener('keydown', hideEventDescription);
+document.addEventListener('keydown', e => {
+    hideEventDescription(e);
+    eventDescriptions.forEach(description => {
+        description.classList.remove('active');
+    })
+});

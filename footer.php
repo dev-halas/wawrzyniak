@@ -104,3 +104,4 @@
 <!-- Javascript-->
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="<?php echo THEME_URL ?>public/bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.umd.min.js"></script>
