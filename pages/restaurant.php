@@ -4,14 +4,16 @@
 
     get_header();
 
+    $restaurant_text = get_field('restaurant_text');
+
 ?>
     <main style="overflow:hidden;">
-        <?php get_template_part('/components/home/hero');?>
+        <?php get_template_part('/components/restaurant/hero');?>
         <section id="about-container">
             <div class="container about-container no-rotate">
                 <h2 class="about-header">Smacznego</h2>
                 <div class="about-text" data-aos="fade-up">
-                    <p>Restauracja Wawrzyniak oferuje Państwu miejsca w klimatyzowanym lokalu o niepowtarzalnej atmosferze i specyficznym, nastrojowym klimacie, który w połączeniu z fantazją szefa kuchni i profesjonalną obsługą pozwoli zasmakować potraw kuchni europejskiej na najwyższym poziomie.</p>
+                    <?php echo $restaurant_text; ?>
                 </div>
             </div>
         </section>
@@ -21,7 +23,7 @@
                 <h2 class="gallery-header-revert">Galeria</h2>
                 <div class="container gallery-images">
                     <div class="gallery-image one" data-aos="zoom-in" data-aos-delay="1200">
-                        <img src="<?php echo THEME_URL; ?>_dev/img/salmon-salad-table-top-view.jpg" alt="sałatka z łososiem">
+                        <img src="<?php echo THEME_URL; ?>" alt="sałatka z łososiem">
                     </div>
                     <div class="gallery-image two" data-aos="zoom-in" data-aos-delay="900">
                         <img src="<?php echo THEME_URL; ?>_dev/img/3d-rendering-luxury-hotel-reception-lounge-restaurant.jpg" alt="hotel z luksusową restauracją">

@@ -1,3 +1,8 @@
+<?php 
+    $home_fitness_image = get_field('home_fitness_image');
+    $home_fitness_text = get_field('home_fitness_text');
+?>
+
 <section id="offer">
     <div class="offer-container">
         <svg class="wave wave-up" id="wave-up" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 130" version="1.1" xmlns="http://www.w3.org/2000/svg"><path style="transform:translate(0, 0px); opacity:1" d="M0,26L26.7,23.8C53.3,22,107,17,160,19.5C213.3,22,267,30,320,47.7C373.3,65,427,91,480,95.3C533.3,100,587,82,640,62.8C693.3,43,747,22,800,10.8C853.3,0,907,0,960,10.8C1013.3,22,1067,43,1120,56.3C1173.3,69,1227,74,1280,62.8C1333.3,52,1387,26,1440,26C1493.3,26,1547,52,1600,69.3C1653.3,87,1707,95,1760,91C1813.3,87,1867,69,1920,60.7C1973.3,52,2027,52,2080,62.8C2133.3,74,2187,95,2240,101.8C2293.3,108,2347,100,2400,91C2453.3,82,2507,74,2560,75.8C2613.3,78,2667,91,2720,97.5C2773.3,104,2827,104,2880,86.7C2933.3,69,2987,35,3040,34.7C3093.3,35,3147,69,3200,75.8C3253.3,82,3307,61,3360,52C3413.3,43,3467,48,3520,58.5C3573.3,69,3627,87,3680,95.3C3733.3,104,3787,104,3813,104L3840,104L3840,130L3813.3,130C3786.7,130,3733,130,3680,130C3626.7,130,3573,130,3520,130C3466.7,130,3413,130,3360,130C3306.7,130,3253,130,3200,130C3146.7,130,3093,130,3040,130C2986.7,130,2933,130,2880,130C2826.7,130,2773,130,2720,130C2666.7,130,2613,130,2560,130C2506.7,130,2453,130,2400,130C2346.7,130,2293,130,2240,130C2186.7,130,2133,130,2080,130C2026.7,130,1973,130,1920,130C1866.7,130,1813,130,1760,130C1706.7,130,1653,130,1600,130C1546.7,130,1493,130,1440,130C1386.7,130,1333,130,1280,130C1226.7,130,1173,130,1120,130C1066.7,130,1013,130,960,130C906.7,130,853,130,800,130C746.7,130,693,130,640,130C586.7,130,533,130,480,130C426.7,130,373,130,320,130C266.7,130,213,130,160,130C106.7,130,53,130,27,130L0,130Z"></path></svg>
@@ -44,20 +49,15 @@
         </svg>
     </div>
 </section>
+
 <section id="offer-fitness">
     <div class="container-big offer-fitness-container">
         <div class="offer-fitness-image" data-aos="zoom-in">
-            <img src="<?php echo THEME_URL; ?>_dev/img/woman-exercise.jpg" alt="młoda kobieta ćwiczy na bieżni">
+            <img src="<?php echo esc_url($home_fitness_image['url']); ?>" alt="fitness">
         </div>
         <h2 class="offer-fitness-header headingBig--revert rotateText">Fitness</h2>
         <div class="offer-fitness-text" data-aos="zoom-in">
-            <p>Hotel Wawrzyniak zaprasza wszystkich gości hotelowych do aktywnego wypoczynku.</p>
-            <br/>
-            <p>W strefie fitness znajdą Państwo wysokiej jakości sprzęt do ćwiczeń cardio oraz siłowych.</p>
-            <br/>
-            <p>Nasza siłownia to doskonały sposób na fizyczny relaks po intensywnym dniu pracy, to również dobrze wyposażone miejsce, przygotowane dla osób początkujących jak i zaawansowanych sportowców.</p>
-            <br/>
-            <p>Po skończonym treningu zapraszamy na partyjkę bilarda w minibarze.</p>
+            <?php echo $home_fitness_text; ?>
         </div>
     </div>
 </section>

@@ -1,22 +1,29 @@
+<?php 
+    $gallery_1 = get_field('gallery_1');
+    $gallery_2 = get_field('gallery_2');
+    $gallery_3 = get_field('gallery_3');
+    $gallery_4 = get_field('gallery_4');
+    $gallery_5 = get_field('gallery_5');
+?>
 <section id="galeria">
     <div class="container-big gallery-container">
         <h2 class="gallery-header-stroke">Galeria</h2>
         <h2 class="gallery-header-revert">Galeria</h2>
         <div class="container gallery-images">
             <div class="gallery-image one" data-aos="zoom-in" data-aos-delay="1200">
-                <img src="<?php echo THEME_URL; ?>_dev/img/white-comfortable-pillow.jpg" alt="pokój jednoosobowy">
+                <img src="<?php echo esc_url($gallery_1['url']); ?>" alt="pokój jednoosobowy">
             </div>
-            <div class="gallery-image two" data-aos="zoom-in" data-aos-delay="900">
-                <img src="<?php echo THEME_URL; ?>_dev/img/loft-luxury-living-room.jpg" alt="pokój dwuosobowy">
+            <div class="gallery-image two" data-aos="zoom-in" data-aos-delay="1200">
+                <img src="<?php echo esc_url($gallery_2['url']); ?>" alt="pokój jednoosobowy">
             </div>
-            <div class="gallery-image three" data-aos="zoom-in" data-aos-delay="600">
-                <img src="<?php echo THEME_URL; ?>_dev/img/woman-stretching-body.jpg" alt="pokój typu studio">
+            <div class="gallery-image three" data-aos="zoom-in" data-aos-delay="1200">
+                <img src="<?php echo esc_url($gallery_3['url']); ?>" alt="pokój jednoosobowy">
             </div>
-            <div class="gallery-image four" data-aos="zoom-in" data-aos-delay="300">
-                <img src="<?php echo THEME_URL; ?>_dev/img/luxury-bedroom-suite-hotel.jpg" alt="apartament">
+            <div class="gallery-image four" data-aos="zoom-in" data-aos-delay="1200">
+                <img src="<?php echo esc_url($gallery_4['url']); ?>" alt="pokój jednoosobowy">
             </div>
-            <div class="gallery-image five" data-aos="zoom-in">
-                <img src="<?php echo THEME_URL; ?>_dev/img/spa-composition.jpg" alt="apartament">
+            <div class="gallery-image five" data-aos="zoom-in" data-aos-delay="1200">
+                <img src="<?php echo esc_url($gallery_5['url']); ?>" alt="pokój jednoosobowy">
             </div>
         </div>
     </div>

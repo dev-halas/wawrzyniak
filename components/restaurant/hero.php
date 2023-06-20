@@ -1,8 +1,8 @@
 <?php 
-    $slide_small = get_field('home_slide_small');
-    $slide_title = get_field('home_slide_title');
-    $slide_link = get_field('home_slide_link');
-    $slide_images = get_field('home_slide_images');
+    $slide_small = get_field('restaurant_slide_small');
+    $slide_title = get_field('restaurant_slide_title');
+    $slide_link = get_field('restaurant_slide_link');
+    $slide_images = get_field('restaurant_slide_images');
 ?>
 <section class="hero">
     <div class="heroInner">

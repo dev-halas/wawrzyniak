@@ -1,36 +1,34 @@
+<?php 
+    $home_text = get_field('home_text');
+?>
 <section id="about-container" id="hotel">
     <div class="container about-container">
         <h2 class="about-header headingBig--revert rotateText">Dzień dobry</h2>
         <div class="about-text" data-aos="fade-up">
-            <p>W południowej Wielkopolsce, w malowniczej okolicy znajduje się Hotel, w którym warto się zatrzymać i odpocząć. Proponujemy Państwu miejsce, o komfortowych warunkach i przyjaznej atmosferze.</p>
-            </br>
-            <p>Hotel Wawrzyniak gwarantuje wysoki standard oraz najwyższą jakość świadczonych usług. Ekskluzywny wystrój wnętrz w pełni oddaje charakter, jaki posiada to miejsce. Dogodne usytuowanie, w spokojnej okolicy przy pięknym ogrodzie daje gwarancję ciszy, spokoju i zdrowego powietrza oraz stwarza odpowiednie warunki do pracy i odpoczynku. Posiadamy 70 miejsca noclegowe  (35 pokoi).</p>
+            <?php echo $home_text; ?>
         </div>
     </div>
 </section>
+
+<?php if( have_rows('home_rooms') ): ?>
 <section id="about-rooms">
     <div class="container-big about-rooms-container">
         <div class="about-rooms">
+            <?php 
+                while( have_rows('home_rooms') ) : the_row(); 
+
+                $rooms_title = get_sub_field('home_room_title');
+                $rooms_link = get_sub_field('home_room_link');
+                $rooms_image = get_sub_field('home_room_image');
+            
+            ?>
             <div class="about-room-image" data-aos="flip-right" data-aos-duration="800">
-                <h3 class="title">pokoje jednoosobowe</h3>
-                <a class="link" href="">zobacz</a>
-                <img src="<?php echo THEME_URL; ?>_dev/img/room-one-person.jpg" alt="pokój jednoosobowy">
+                <h3 class="title"><?php echo $rooms_title; ?></h3>
+                <a class="link" href="<?php echo esc_url($rooms_link['url']); ?>">zobacz</a>
+                <img src="<?php echo esc_url($rooms_image['url']); ?>" alt="pokój jednoosobowy">
             </div>
-            <div class="about-room-image" data-aos="flip-left" data-aos-duration="800">
-                <h3 class="title">pokoje dwuosobowe</h3>
-                <a class="link" href="">zobacz</a>
-                <img src="<?php echo THEME_URL; ?>_dev/img/room-two-person.jpg" alt="pokój dwuosobowy">
-            </div>
-            <div class="about-room-image" data-aos="flip-right" data-aos-duration="800">
-                <h3 class="title">pokoje typu studio</h3>
-                <a class="link" href="">zobacz</a>
-                <img src="<?php echo THEME_URL; ?>_dev/img/room-studio.jpg" alt="pokój typu studio">
-            </div>
-            <div class="about-room-image" data-aos="flip-left" data-aos-duration="800">
-                <h3 class="title">ekskluzywny apartament</h3>
-                <a class="link" href="">zobacz</a>
-                <img src="<?php echo THEME_URL; ?>_dev/img/room-apartament.jpg" alt="apartament">
-            </div>
+            <?php endwhile ;?>
         </div>
     </div>
 </section>
+<?php endif; ?>
